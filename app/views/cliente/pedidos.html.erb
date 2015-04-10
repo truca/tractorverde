@@ -1,0 +1,24 @@
+<h1>Pedidos anteriores</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Fecha</th>
+      <th>Monto</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orders.each do |order| %>
+      <tr>
+        <td><%= order.orderDate %></td>
+        <td>perro</td>
+        <td><%= link_to 'Ver', order %></td>
+        <td>Utilizar</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "Volver", controller: "cliente", action: "index" %>

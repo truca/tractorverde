@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  orderDate: 2015-04-07
+  product: 1
+  client: 1
+  quantity: 1
+  unitCost: 1
+
+two:
+  orderDate: 2015-04-07
+  product: 1
+  client: 1
+  quantity: 1
+  unitCost: 1

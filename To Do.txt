@@ -1,0 +1,6 @@
+To do:
+
+- obtener el nombre de la persona desde el usuario
+- obtener el id del usuario
+- usar el id del usuario en la creacion del pedido
+- cambiar el formulario de inscripción de usuario (agregar campos: nombre, telefono, etc)
