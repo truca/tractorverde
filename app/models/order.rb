@@ -1,4 +1,4 @@
 class Order < ActiveRecord::Base
-    belongs_to :client, dependent: :destroy
-    validates :client, :presence => true
+    belongs_to :user, dependent: :destroy
+    validates :user, :presence => true
 end

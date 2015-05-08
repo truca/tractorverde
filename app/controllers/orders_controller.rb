@@ -25,9 +25,12 @@ class OrdersController < ApplicationController
   end
 
   def create
+    if not user_signed_in?
+        redirect_to :controller=>'home', :action=>'index'
+    end
+    
     @order = Order.new(order_params)
-    @client = Client.find(1)
-    @order.client = @client
+    @order.user = current_user
     @order.save
     respond_with(@order)
   end

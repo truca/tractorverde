@@ -45,4 +45,5 @@ gem 'devise'
 # gem 'friendly_id'
 # gem 'cocoon'
 # gem 'cancancan'
+gem 'paperclip', '~> 4.2.1'
 

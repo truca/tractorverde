@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   
+  devise_for :users
   root to: "home#index"
 
   resources :order_products
@@ -13,10 +14,10 @@ Rails.application.routes.draw do
   
   resources :dashboard
 
-  devise_for :users
   
   match "/clientes/" => "cliente#index", :via => [:get,:post]
   match "/clientes/pedidos" => "cliente#pedidos", :via => [:get,:post]
+  match "/clientes/agregarDatos" => "cliente#agregarDatos", :via => [:get,:post]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

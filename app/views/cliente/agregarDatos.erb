@@ -1,0 +1,35 @@
+<h1>Agregar Datos</h1>
+
+<%= form_for @user, url: {action: 'update', controller: 'users'} do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h4><%= pluralize(@user.errors.count, "error") %> prohibited this order from being saved:</h4>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.date_select :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br>
+    <%= f.date_select :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br>
+    <%= f.date_select :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono2 %><br>
+    <%= f.date_select :telefono2 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
